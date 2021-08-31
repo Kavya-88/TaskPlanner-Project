@@ -4,6 +4,26 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+ <title>Task Planner</title>
+  </head>
+  <body>
+    <h1>Task Planner</h1>
+    <!--button start here-->
+      <button type="button" class="btn btn-outline-success">Create Task</button>
+  <!-- Button end here-->
+  <h2>Task Layout</h2>
+  <div class="row">
+    <div class="col"></div>
+    <div class="col"></div>
+    <div class="col"></div>
+  </div>
+    <!-- card starts here-->
+    <div class="container">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <title>Task Planner</title>
@@ -19,6 +39,7 @@
 
 
    <!-- card starts here-->
+
    <div class="card" style="width: 18rem;">
     <div class="card-body">
       <h5 class="card-title">Task</h5>
@@ -29,13 +50,20 @@
     </div>
     <br>
     <!-- Discription box -->
+
+
     
+
       <div class="mb-3 input-group-text">
         <label for="exampleFormControlTextarea1" class="form-label">Discription</label>
         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
       </div>
       <br>
       <!-- Assign to -->
+
+      <div class="input-group-text">
+        <span class="input-text">Assigned to</span>
+        <input type="text" aria-label="form-control" class="form-control">
       <div class="dropdown">
         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
           Assign to
@@ -45,6 +73,7 @@
           <li><a class="dropdown-item" href="#">Person B</a></li>
           <li><a class="dropdown-item" href="#">Person C</a></li>
         </ul>
+
       </div>
       <br>
       <!-- Due date -->
@@ -64,6 +93,67 @@
             <option value="3">Done</option>
           </select>        
           </div>
+
+          <!-- Edit or Delete -->
+          <input type="submit" value="Edit">
+         <input type="reset" value="Delete">
+    </div>
+  </div>
+</div>
+   <!--Card end here-->
+</div>
+  </div>
+</div>
+<br>
+<br>
+  <div class="container"> 
+<!-- card starts here-->
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Task</h5>
+      <!-- Name -->
+   <div class="input-group-text">
+    <span class="input-text">Name</span>
+    <input type="text" aria-label="form-control" class="form-control">
+    </div>
+    <br>
+    <!-- Discription box -->
+      <div class="mb-3 input-group-text">
+        <label for="exampleFormControlTextarea1" class="form-label">Discription</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <br>
+      <!-- Assign to -->
+      <div class="input-group-text">
+        <span class="input-text">Assigned to</span>
+        <input type="text" aria-label="form-control" class="form-control">
+      </div>
+      <br>
+      <!-- Due date -->
+      <div class="input-group-text">
+        <span class="input-text">Due Date</span>
+        <input type="text" aria-label="form-control" class="form-control">
+        </div>
+        <br>
+        <!-- Status -->
+        <div class="col">
+            <label for="exampleFormControlSelect2"></label>
+          <select class="form-select form-select-sm mb-3" aria-label=".form-select-sm example">
+            <option selected>Status </option>
+            <option value="1">To Do</option>
+            <option value="2">In Progress</option>
+            <option value="3">Review</option>
+            <option value="3">Done</option>
+          </select>        
+          </div>
+          <!-- Edit or Delete -->
+          <input type="submit" value="Edit">
+         <input type="reset" value="Delete">
+    </div>
+  </div>
+</div>
+
+
           <br>
           <!-- Edit or Delete -->
           <div class="col">
@@ -84,5 +174,6 @@
    
 </div>
   </div>
+
 </body>
 </html>
