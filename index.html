@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
  <title>Task Planner</title>
@@ -22,6 +23,23 @@
   </div>
     <!-- card starts here-->
     <div class="container">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Task Planner</title>
+  </head>
+  <body>
+    <h1>Task Planner</h1>
+
+    <!-- Create button -->
+<button type="button" class="btn btn-outline-success">Create Task</button>
+
+    <!-- Heading 2 -->
+<h2 class="heading">Task Layout</h2>
+
+
+   <!-- card starts here-->
+
    <div class="card" style="width: 18rem;">
     <div class="card-body">
       <h5 class="card-title">Task</h5>
@@ -32,15 +50,30 @@
     </div>
     <br>
     <!-- Discription box -->
+
+
+    
+
       <div class="mb-3 input-group-text">
         <label for="exampleFormControlTextarea1" class="form-label">Discription</label>
         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
       </div>
       <br>
       <!-- Assign to -->
+
       <div class="input-group-text">
         <span class="input-text">Assigned to</span>
         <input type="text" aria-label="form-control" class="form-control">
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          Assign to
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">Person A</a></li>
+          <li><a class="dropdown-item" href="#">Person B</a></li>
+          <li><a class="dropdown-item" href="#">Person C</a></li>
+        </ul>
+
       </div>
       <br>
       <!-- Due date -->
@@ -60,6 +93,7 @@
             <option value="3">Done</option>
           </select>        
           </div>
+
           <!-- Edit or Delete -->
           <input type="submit" value="Edit">
          <input type="reset" value="Delete">
@@ -118,6 +152,28 @@
     </div>
   </div>
 </div>
+
+
+          <br>
+          <!-- Edit or Delete -->
+          <div class="col">
+            <label for="exampleFormControlSelect2"></label>
+          <select class="form-select form-select-sm mb-3" aria-label=".form-select-sm example">
+            <option selected>Edit/Delete</option>
+            <option value="1">Edit</option>
+            <option value="2">Delete</option>
+          </select>        
+          </div>
+
+          
+
+    </div>
+  </div>
+   <!--Card end here-->
+
+   
+</div>
+  </div>
 
 </body>
 </html>
