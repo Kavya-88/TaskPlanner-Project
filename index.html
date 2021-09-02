@@ -15,16 +15,78 @@
 
     
 
-    <!-- Create button starts here -->
+    
+    
+    <!-- Button trigger modal -->
     <section class="container mt-5">
-      <button type="button" class="btn btn-success">Success</button>
-      <h2 class="mt-5">Task Layout</h2>
+<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Create Task</button>
 
-    <!-- Modal starts here -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add a new Task</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Name starts here -->
+        <div class="row">
+          <div class="col-auto">
+            <label for="inputname" class="col-form-label">Name</label>
+          </div>
+          <div class="col-auto">
+            <input type="name" id="inputname" class="form-control" aria-describedby="nameHelpInline">
+          </div>
+          </div>
+          <!-- Name ends here -->
 
-    <!-- Modal ends here -->    
+          <!-- Description starts here -->
+          <div class="row g-3 align-items-center mt-3">
+            <div class="col-auto">
+              <label for="inputname" class="col-form-label">Description</label>
+            </div>
+            <div class="col-auto">
+              <textarea class="form-control" id="FormControlTextarea1" rows="3"></textarea>
+            </div>
+          </div>
+          <!-- Description ends here -->
+
+          <!-- Assign to starts here -->
+          <select class="form-select mt-3" aria-label="Default select example">
+            <option selected>Open this select menu</option>
+            <option value="1">Kavya</option>
+            <option value="2">Uma</option>
+            <option value="3">William</option>
+          </select>
+                  
+          <!-- Assign to ends here -->
+
+          <!-- Status starts here -->
+          <div class="dropdown mt-3">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              Status
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Backlog</a></li>
+              <li><a class="dropdown-item" href="#">Pending</a></li>
+              <li><a class="dropdown-item" href="#">Completed</a></li>
+            </ul>
+          </div>
+            <!-- Status to ends here -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+      <h2 class="mt-5">Task Layout</h2>   
   </section>
-  <!-- Create button ends here -->
+  <!-- Modal ends here --> 
+
+  
 
     <!-- Column starts here -->
       <section class="container mt-5">
@@ -33,12 +95,13 @@
           <!-- 1st column starts here -->
           <div class="col">
             <!-- Card starts here -->
+            
             <div class="card" style="width: 20rem;">
               <div class="card-body">
                 <h5 class="card-title">Task</h5>
                 <p class="card-text"></p>
                 <!-- Name starts here -->
-                <div class="row g-3 align-items-center">
+                <div class="row">
                   <div class="col-auto">
                     <label for="inputname" class="col-form-label">Name</label>
                   </div>
@@ -49,20 +112,21 @@
                   <!-- Name ends here -->
 
                   <!-- Description starts here -->
-                  
-                  <div class="mt-3">
+                  <div class="row g-3 align-items-center mt-3">
                     <div class="col-auto">
-                    <label for="FormControlTextarea1" class="form-label">Description</label>
+                      <label for="inputname" class="col-form-label">Description</label>
+                    </div>
+                    <div class="col-auto">
+                      <textarea class="form-control" id="FormControlTextarea1" rows="3"></textarea>
+                    </div>
                   </div>
-                    <textarea class="form-control" id="FormControlTextarea1" rows="3"></textarea>
-                  </div>
-                  
-
                   <!-- Description ends here -->
+
+                  <!-- Assign to starts here -->
+                  
+                  <!-- Assign to ends here -->
               </div>
             </div>
-
-
             <!-- Card ends here -->
           </div>
           <!-- 1st column ends here -->
