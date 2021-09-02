@@ -6,159 +6,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
     <title>Task Planner Page</title>
   </head>
   <body>
-    <h1>Task Planner</h1>
-<br>
-<!--button start here-->
-    <button type="button" class="btn btn-outline-success">Create Task</button>
-    <!-- Button end here-->
-<br>
-    <h4>Task Layout</h4>
-<br>
+    <h1 class="text-center">Task Planner</h1>
+
+    
+
+    <!-- Create button starts here -->
+    <section class="container mt-5">
+      <button type="button" class="btn btn-success">Success</button>
+      <h2 class="mt-5">Task Layout</h2>
+
+    <!-- Modal starts here -->
+
+    <!-- Modal ends here -->    
+  </section>
+  <!-- Create button ends here -->
+
     <!-- Column starts here -->
-<section class="container">
-    <div class="row">
-<!-- 1st Column starts here -->
+      <section class="container mt-5">
+        <div class="row">
 
-    <div class="col">
-<!-- 1st Card starts here-->
-      <div class="card" style="width: 20rem;">
-  <div class="card-body">
-    <h5 class="card-title">Task</h5>
-    <!-- Name starts here -->
-     <div class="input-group-text">
-      <span class="input-text">Name</span>
-      <input type="text" aria-label="form-control" class="form-control">
-      </div>
-    <!-- Name ends here -->
-    <br>
-
-      <!-- Discription box starts here -->
-        <div class="mb-3 input-group-text">
-          <label for="exampleFormControlTextarea1" class="form-label">Discription</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-<!-- Discription box ends here -->
-
-<!-- Assign to starts here-->
-        <div class="input-group-text">
-          <span class="input-text">Assigned to</span>
-          <input type="text" aria-label="form-control" class="form-control">
-        </div>
-<!-- Assign to ends here-->
-        <br>
-<!-- Due date starts here -->
-        <div class="input-group">
-        <form class="row g-2 needs-validation" novalidate></form>
-        <div class="input-group-text col-md-6">
-          <span class="input-text">Due Date</span>
-          <input type="text" aria-label="form-control" class="form-control">
-          </div>
-<!-- Due date ends here -->
-          <br>
-<!-- Status starts here -->
-<div class="col-md-4">
-              <label for="exampleFormControlSelect2"></label>
-            <select class="form-select form-select-sm mb-3" aria-label=".form-select-sm example">
-              <option selected>Status </option>
-              <option value="1">To Do</option>
-              <option value="2">In Progress</option>
-              <option value="3">Review</option>
-              <option value="3">Done</option>
-            </select>        
-            </div>
-<!-- Status ends here -->
-<br>
-<!-- Edit or Delete starts here-->
-            <input type="submit" value="Edit">
-           <input type="reset" value="Delete">
-<!-- Edit or Delete ends here-->
-
-  </div>
-</div>
-<!-- 1st Card ends here-->
-    </div>
-
-<!-- 1st Column ends here -->
-<br>
-
-<!-- 2st Column start here -->
-<section class="container">
-    <div class="col">
-        <div class="card" style="width: 20rem;">
-            <div class="card-body">
-              <h5 class="card-title">Task</h5>
-              <!-- Name starts here -->
-               <div class="input-group-text">
-                <span class="input-text">Name</span>
-                <input type="text" aria-label="form-control" class="form-control">
-                </div>
-              <!-- Name ends here -->
-              <br>
-          
-                <!-- Discription box starts here -->
-                  <div class="mb-3 input-group-text">
-                    <label for="exampleFormControlTextarea1" class="form-label">Discription</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <!-- 1st column starts here -->
+          <div class="col">
+            <!-- Card starts here -->
+            <div class="card" style="width: 20rem;">
+              <div class="card-body">
+                <h5 class="card-title">Task</h5>
+                <p class="card-text"></p>
+                <!-- Name starts here -->
+                <div class="row g-3 align-items-center">
+                  <div class="col-auto">
+                    <label for="inputname" class="col-form-label">Name</label>
                   </div>
-          <!-- Discription box ends here -->
-          
-          <!-- Assign to starts here-->
-                  <div class="input-group-text">
-                    <span class="input-text">Assigned to</span>
-                    <input type="text" aria-label="form-control" class="form-control">
+                  <div class="col-auto">
+                    <input type="name" id="inputname" class="form-control" aria-describedby="nameHelpInline">
                   </div>
-          <!-- Assign to ends here-->
-                  <br>
-          <!-- Due date starts here -->
-                  <div class="input-group">
-                  <form class="row g-2 needs-validation" novalidate></form>
-                  <div class="input-group-text col-md-6">
-                    <span class="input-text">Due Date</span>
-                    <input type="text" aria-label="form-control" class="form-control">
-                    </div>
-          <!-- Due date ends here -->
-                    <br>
-          <!-- Status starts here -->
-          <div class="col-md-4">
-                        <label for="exampleFormControlSelect2"></label>
-                      <select class="form-select form-select-sm mb-3" aria-label=".form-select-sm example">
-                        <option selected>Status </option>
-                        <option value="1">To Do</option>
-                        <option value="2">In Progress</option>
-                        <option value="3">Review</option>
-                        <option value="3">Done</option>
-                      </select>        
-                      </div>
-          <!-- Status ends here -->
-          <br>
-          <!-- Edit or Delete starts here-->
-        <input type="submit" value="Edit">
-        <input type="reset" value="Delete">
-          <!-- Edit or Delete ends here-->
-          
-            </div>
-          </div>
-    </div>
-</section>
-<!-- 2nd Column ends here -->
+                  </div>
+                  <!-- Name ends here -->
 
-<!-- 3rd Column starts here -->
-<section class="container">
-    <div class="col">
-      Column
-    </div>
-</section>
-<!-- 3rd Column ends here -->
-  </div>
-</section>
-<!-- Column ends here -->
+                  <!-- Description starts here -->
+                  
+                  <div class="mt-3">
+                    <div class="col-auto">
+                    <label for="FormControlTextarea1" class="form-label">Description</label>
+                  </div>
+                    <textarea class="form-control" id="FormControlTextarea1" rows="3"></textarea>
+                  </div>
+                  
+
+                  <!-- Description ends here -->
+              </div>
+            </div>
+
+
+            <!-- Card ends here -->
+          </div>
+          <!-- 1st column ends here -->
+
+          <!-- 2nd column starts here -->
+          <div class="col">
+            Column
+          </div>
+          <!-- 2nd column ends here -->
+
+          <!-- 3rd column starts here -->
+          <div class="col">
+            Column
+          </div>
+          <!-- 3rd column ends here -->
+
+          <!-- 4th column starts here -->
+          <div class="col">
+            Column
+          </div>
+          <!-- 4th column ends here -->
+
+          <!-- 5th column starts here -->
+          <div class="col">
+            Column
+          </div>
+          <!-- 5th column ends here -->
+        </div>
+      </section>
+
+
+    <!-- Column ends here -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+  </body>
 </html>
