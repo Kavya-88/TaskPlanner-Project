@@ -8,6 +8,10 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
+    <!-- My CSS -->
+    <link href="./css/mystyles.css" rel="stylesheet">
+
+
     <title>Task Planner Page</title>
   </head>
   <body>
@@ -19,18 +23,19 @@
     
     <!-- Button trigger modal -->
     <section class="container mt-5">
-<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Create Task</button>
+<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#Modal">Create Task</button>
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Add a new Task</h5>
+        <h5 class="modal-title" id="ModalLabel">Add a new Task</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         <!-- Name starts here -->
+        <section class="container">
         <div class="row">
           <div class="col-auto">
             <label for="inputname" class="col-form-label">Name</label>
@@ -53,8 +58,8 @@
           <!-- Description ends here -->
 
           <!-- Assign to starts here -->
-          <select class="form-select mt-3" aria-label="Default select example">
-            <option selected>Open this select menu</option>
+          <select class="form-select mt-3" aria-label="Default select">
+            <option selected>Assign to</option>
             <option value="1">Kavya</option>
             <option value="2">Uma</option>
             <option value="3">William</option>
@@ -63,17 +68,23 @@
           <!-- Assign to ends here -->
 
           <!-- Status starts here -->
-          <div class="dropdown mt-3">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-              Status
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <li><a class="dropdown-item" href="#">Backlog</a></li>
-              <li><a class="dropdown-item" href="#">Pending</a></li>
-              <li><a class="dropdown-item" href="#">Completed</a></li>
-            </ul>
-          </div>
+            <select class="form-select mt-3" aria-label="Default select">
+              <option selected>Status</option>
+              <option value="1">To Do</option>
+              <option value="2">In Progress</option>
+              <option value="3">Review</option>
+              <option value="3">Done</option>
+            </select>
+          
             <!-- Status to ends here -->
+
+            <!-- Calendar starts here -->
+            <div class="col-md-5 mt-3">
+              <label for="dueDate" class="form-label" >Due date:</label>
+      
+            <input type="date" class="form-control" min=2021-01-01 max=2022-01-01 id="dueDate" name="dueDate" required>
+            </div>
+            <!-- Calendar ends here -->
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -123,9 +134,41 @@
                   <!-- Description ends here -->
 
                   <!-- Assign to starts here -->
+                  <div class="row mt-3">
+                    <div class="col-4">
+                      <label for="inputname" class="col-form-label">Assign to</label>
+                    </div>
+                    <div class="col-auto textbox">
+                      <input type="name" id="inputname" class="form-control" aria-describedby="nameHelpInline">
+                    </div>
+                    </div>
                   
                   <!-- Assign to ends here -->
-              </div>
+
+                  <!-- Due Date starts here -->
+                  <section class="container">
+                  <div class="row mt-3">
+                    <div class="col-4">
+                      <label for="inputname" class="col-form-label">Due Date</label>
+                    </div>
+                    <div class="col-auto textbox">
+                      <input type="name" id="inputname" class="form-control" aria-describedby="nameHelpInline">
+                    </div>
+                    </div>
+                    <!-- Due Date ends here -->
+
+                    <!-- Status starts here -->
+                    <div class="row mt-3">
+                      <div class="col-4">
+                        <label for="inputname" class="col-form-label">Status</label>
+                      </div>
+                      <div class="col-auto textbox">
+                        <input type="name" id="inputname" class="form-control" aria-describedby="nameHelpInline">
+                      </div>
+                      </div>
+                    </section>
+                    <!-- Status ends here -->
+                  </div>
             </div>
             <!-- Card ends here -->
           </div>
