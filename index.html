@@ -23,14 +23,14 @@
     
     <!-- Button trigger modal -->
     <section class="container mt-5">
-<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#Modal">Create Task</button>
+<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#createTaskModal">Create Task</button>
 
 <!-- Modal -->
-<div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+<div class="modal fade" id="createTaskModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="ModalLabel">Add a new Task</h5>
+        <h5 class="modal-title" id="modalLabel">Add a new Task</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -38,10 +38,10 @@
         <section class="container">
         <div class="row">
           <div class="col-auto">
-            <label for="inputname" class="col-form-label">Name</label>
+            <label for="inputtext" class="col-form-label">Name</label>
           </div>
           <div class="col-auto">
-            <input type="name" id="inputname" class="form-control" aria-describedby="nameHelpInline">
+            <input type="text" id="inputtext" class="form-control" aria-describedby="nameHelpInline">
           </div>
           </div>
           <!-- Name ends here -->
@@ -49,17 +49,17 @@
           <!-- Description starts here -->
           <div class="row g-3 align-items-center mt-3">
             <div class="col-auto">
-              <label for="inputname" class="col-form-label">Description</label>
+              <label for="description" class="col-form-label">Description</label>
             </div>
             <div class="col-auto">
-              <textarea class="form-control" id="FormControlTextarea1" rows="3"></textarea>
+              <textarea class="form-control" id="description" rows="3"></textarea>
             </div>
           </div>
           <!-- Description ends here -->
 
           <!-- Assign to starts here -->
-          <select class="form-select mt-3" aria-label="Default select">
-            <option selected>Assign to</option>
+          <select class="form-select mt-3" aria-label="assigned to">
+            <option selected>Assigned to</option>
             <option value="1">Kavya</option>
             <option value="2">Uma</option>
             <option value="3">William</option>
@@ -68,7 +68,7 @@
           <!-- Assign to ends here -->
 
           <!-- Status starts here -->
-            <select class="form-select mt-3" aria-label="Default select">
+            <select class="form-select mt-3" aria-label="status">
               <option selected>Status</option>
               <option value="1">To Do</option>
               <option value="2">In Progress</option>
@@ -100,13 +100,13 @@
   
 
     <!-- Column starts here -->
-      <section class="container mt-5">
+      <section class="container">
         <div class="row">
 
           <!-- 1st column starts here -->
           <div class="col">
             <!-- Card starts here -->
-            <section class="container">
+            <section class="container mt-3">
             <div class="card" style="width: 18rem;">
               <div class="card-body">
                 <h5 class="card-title">Task</h5>
@@ -127,7 +127,7 @@
           <!-- 2nd column starts here -->
           <div class="col">
             <!-- Card starts here -->
-            <section class="container">
+            <section class="container mt-3">
               <div class="card" style="width: 18rem;">
                 <div class="card-body">
                   <h5 class="card-title">Task</h5>
@@ -148,7 +148,7 @@
           <!-- 3rd column starts here -->
           <div class="col">
             <!-- Card starts here -->
-            <section class="container">
+            <section class="container mt-3">
               <div class="card" style="width: 18rem;">
                 <div class="card-body">
                   <h5 class="card-title">Task</h5>
@@ -190,7 +190,7 @@
           <!-- 5th column starts here -->
           <div class="col">
             <!-- Card starts here -->
-            <section class="container">
+            <section class="container mt-3">
               <div class="card mt-3" style="width: 18rem;">
                 <div class="card-body">
                   <h5 class="card-title">Task</h5>
@@ -211,7 +211,7 @@
           <!-- 6th column starts here -->
           <div class="col">
             <!-- Card starts here -->
-            <section class="container">
+            <section class="container mt-3">
               <div class="card mt-3" style="width: 18rem;">
                 <div class="card-body">
                   <h5 class="card-title">Task</h5>
