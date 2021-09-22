@@ -13,20 +13,19 @@
 
 
     <title>Task Planner Page</title>
+    
   </head>
   <body>
     <h1 class="text-center">Task Planner</h1>
 
     
 
-    
-    
     <!-- Button trigger modal -->
     <section class="container mt-5">
 <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#createTaskModal">Create Task</button>
 
 <!-- Modal -->
-<form action = "/cgi-bin/test.cgi" name='addtask' onSubmit="return(validFormFieldInput());">
+<!-- <form action = "/cgi-bin/test.cgi" name='addtask' onSubmit="return(validFormFieldInput());"></form> -->
 <div class="modal fade" id="createTaskModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -36,13 +35,17 @@
       </div>
       <div class="modal-body">
         <!-- Name starts here -->
-        <section class="container">
+        <form class="container">
         <div class="row">
           <div class="col-auto">
-            <label for="inputtext" class="col-form-label">Name</label>
+           
+
+            <label for="myName" class="col-form-label">Name</label>
+            <span id="errMsg1"> </span>
           </div>
           <div class="col-auto">
-            <input type="text" id="inputtext" class="form-control" aria-describedby="nameHelpInline" name="Name">
+            <input type="text" id="myName" class="form-control" aria-describedby="nameHelpInline" name="Name">
+           
           </div>
          
           </div>
@@ -53,55 +56,70 @@
           <!-- Description starts here -->
           <div class="row g-3 align-items-center mt-3">
             <div class="col-auto">
+              
+
               <label for="description" class="col-form-label">Description</label>
+              <span id="errMsg2"> </span>
             </div>
             <div class="col-auto">
               <textarea class="form-control" id="description" rows="3"></textarea>
+              
             </div>
             
           </div>
           <!-- Description ends here -->
 
           <!-- Assign to starts here -->
-          <select class="form-select mt-3" aria-label="assigned to" id="assignto">
-            <option selected>Assigned to</option>
-            <option value="1">Kavya</option>
-            <option value="2">Uma</option>
-            <option value="3">William</option>
+          
+
+          <label for="assign" class="col-form-label">Assign</label>
+          <span id="errMsg3"> </span>
+          <select class="form-select mt-3" aria-label="assigned to" id="assign">
+            <option value="assignedto">Assigned to</option>
+            <option value="kavya">Kavya</option>
+            <option value="uma">Uma</option>
+            <option value="william">William</option>
           </select>
-                  
+             
           <!-- Assign to ends here -->
 
           <!-- Status starts here -->
+        
+
+          <label for="status" class="col-form-label">status</label>
+          <span id="errMsg4"> </span>
             <select class="form-select mt-3" aria-label="status" id="status">
-              <option selected>Status</option>
-              <option value="1">To Do</option>
-              <option value="2">In Progress</option>
-              <option value="3">Review</option>
-              <option value="3">Done</option>
+              <option value="status">Status</option>
+              <option value="todo">To Do</option>
+              <option value="inprogress">In Progress</option>
+              <option value="review">Review</option>
+              <option value="done">Done</option>
             </select>
-          
+            
             <!-- Status to ends here -->
 
             <!-- Calendar starts here -->
             <div class="col-md-5 mt-3">
+              
+
               <label for="dueDate" class="form-label" >Due date:</label>
+              <span id="errMsg5"> </span>
       
             <input type="date" class="form-control" min=2021-01-01 max=2022-01-01 id="dueDate" name="dueDate" required>
-            
+           
           </div>
             <!-- Calendar ends here -->
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-success" value ="Valid Name">Save changes</button>
+        <button type="button" class="btn btn-secondary" id="close" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success" id="savechanges" value ="Valid Name">Save changes</button>
         
       </div>
     </div>
   </div>
 </div>
-</section>
 </form>
+<!-- formendbutton here -->
         <h2 class="mt-5">Task Layout</h2> 
   </section>
   <!-- Modal ends here --> 
@@ -271,9 +289,9 @@
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
-
-    <script src="./index.js"></script>
+    <script src="js/taskManager.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
