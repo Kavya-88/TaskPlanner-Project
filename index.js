@@ -20,12 +20,10 @@
 // }
 // }
 
+const taskform = document.getElementById("taskform");
+const Name = document.getElementById("inputtext");
 
 
-function validFormFieldInput() {
-  if( document.addtask.Name.value == "") {
-     alert( "Please provide your name!");
-     document.addtask.Name.focus();
-     return false;
-  }
-}
+
+
+

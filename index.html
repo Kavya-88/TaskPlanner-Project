@@ -26,7 +26,7 @@
 <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#createTaskModal">Create Task</button>
 
 <!-- Modal -->
-<form action = "/cgi-bin/test.cgi" name='addtask' onSubmit="return(validFormFieldInput());">
+
 <div class="modal fade" id="createTaskModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -35,6 +35,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
+        <form action = "/cgi-bin/test.cgi" name='taskform' class="form" id="taskform" onSubmit="return(validFormFieldInput());">
         <!-- Name starts here -->
         <section class="container">
         <div class="row">
@@ -91,17 +92,18 @@
             
           </div>
             <!-- Calendar ends here -->
+          </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-success" value ="Valid Name">Save changes</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" name="closeBtn" id="close">Close</button>
+        <button type="button" class="btn btn-success" onclick="validFormFieldInput();" value="Validate Name" name="submitBtn" id="submit">Save changes</button>
         
       </div>
     </div>
   </div>
 </div>
 </section>
-</form>
+
         <h2 class="mt-5">Task Layout</h2> 
   </section>
   <!-- Modal ends here --> 
