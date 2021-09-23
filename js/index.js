@@ -88,3 +88,49 @@ console.log(validateStatus.value);
     
   
   
+//task 6 step 1
+
+    
+    let taskArray = [];
+
+    const addTask = (event) => {
+      event.preventDefault(); //to stop the form submitting
+      let task = {
+        taskName: document.getElementById('myName').value,
+        description: document.getElementById("description").value,
+        assignedTo: document.getElementById("assign").value,
+        dueDate: document.getElementById("dueDate").value,
+        status: document.getElementById("status").value,
+        
+      }
+
+      
+
+
+      taskArray.push(task);
+      document.forms[0].reset(); //to clear the form for the next entries
+      //document.querySelector('form').reset();
+
+      //for display purpose only
+      console.log("added", {taskArray});
+      // let pre = document.querySelector('#msg pre');
+      // pre.textContent = '\n' + JSON.stringify(taskArray, '\t', 2);
+
+      //saving to local storage
+      
+      // localStorage.setItem('MyTaskList', JSON.stringify(taskArray));
+
+      
+
+      
+      }
+      document.addEventListener('DOMContentLoaded', () => {
+        document.getElementById('savechanges').addEventListener('click', addTask);
+      });
+
+
+
+
+      
+      
+      

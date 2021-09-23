@@ -35,12 +35,12 @@
       <div class="modal-body">
         
         <!-- Name starts here -->
-        <form class="container">
+        <form class="container" id="form">
         <div class="row">
           <div class="col-auto">
            
 
-            <label for="myName" class="col-form-label">Name</label>
+            <label for="myName" class="col-form-label">Task Name</label>
             <span id="errMsg1"> </span>
           </div>
           <div class="col-auto">
@@ -117,6 +117,7 @@
         <button type="button" class="btn btn-success" id="savechanges" value ="Valid Name">Save changes</button>
         
       </div>
+      
     </div>
   </div>
 </div>
@@ -138,7 +139,7 @@
           <div class="col">
             <!-- Card starts here -->
             <section class="container mt-3">
-            <div class="card" style="width: 18rem;">
+            <div class="card" style="width: 18rem;" id="taskcard">
               <div class="card-body">
                 <h5 class="card-title">Task</h5>
                 <p class="card-text">Name: Shopping</p>
@@ -155,110 +156,7 @@
           </div>
           <!-- 1st column ends here -->
 
-          <!-- 2nd column starts here -->
-          <div class="col">
-            <!-- Card starts here -->
-            <section class="container mt-3">
-              <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Task</h5>
-                  <p class="card-text">Name: Cooking</p>
-                  <p>Description: Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                  <p>Assigned to: Uma</p>
-                  <p>Due Date: 06/09/2021</p>
-                  <p>Status: In Progress</p>
-                  <button type="button" class="btn btn-success">Edit</button>
-                  <button type="button" class="btn btn-danger">Delete</button>
-                    </div>
-              </div>
-            </section>
-              <!-- Card ends here -->
-          </div>
-          <!-- 2nd column ends here -->
-
-          <!-- 3rd column starts here -->
-          <div class="col">
-            <!-- Card starts here -->
-            <section class="container mt-3">
-              <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Task</h5>
-                  <p class="card-text">Name: Washing</p>
-                  <p>Description: Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                  <p>Assigned to: Kavya</p>
-                  <p>Due Date: 07/09/2021</p>
-                  <p>Status: In Progress</p>
-                  <button type="button" class="btn btn-success">Edit</button>
-                  <button type="button" class="btn btn-danger">Delete</button>
-                    </div>
-              </div>
-            </section>
-              <!-- Card ends here -->
-          </div>
-          <!-- 3rd column ends here -->
-
-          <!-- 4th column starts here -->
-          <div class="col">
-            <!-- Card starts here -->
-            <section class="container mt-3">
-              <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Task</h5>
-                  <p class="card-text">Name: Cleaning</p>
-                  <p>Description: Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                  <p>Assigned to: Uma</p>
-                  <p>Due Date: 08/09/2021</p>
-                  <p>Status: In Progress</p>
-                  <button type="button" class="btn btn-success">Edit</button>
-                  <button type="button" class="btn btn-danger">Delete</button>
-                    </div>
-              </div>
-            </section>
-              <!-- Card ends here -->
-          </div>
-          <!-- 4th column ends here -->
-
-          <!-- 5th column starts here -->
-          <div class="col">
-            <!-- Card starts here -->
-            <section class="container mt-3">
-              <div class="card mt-3" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Task</h5>
-                  <p class="card-text">Name: Laundry</p>
-                  <p>Description: Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                  <p>Assigned to: Kavya</p>
-                  <p>Due Date: 09/09/2021</p>
-                  <p>Status: In Progress</p>
-                  <button type="button" class="btn btn-success">Edit</button>
-                  <button type="button" class="btn btn-danger">Delete</button>
-                    </div>
-              </div>
-            </section>
-              <!-- Card ends here -->
-          </div>
-          <!-- 5th column ends here -->
-
-          <!-- 6th column starts here -->
-          <div class="col">
-            <!-- Card starts here -->
-            <section class="container mt-3">
-              <div class="card mt-3" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Task</h5>
-                  <p class="card-text">Name: Shopping</p>
-                  <p>Description: Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                  <p>Assigned to: Uma</p>
-                  <p>Due Date: 05/09/2021</p>
-                  <p>Status: In Progress</p>
-                  <button type="button" class="btn btn-success">Edit</button>
-                  <button type="button" class="btn btn-danger">Delete</button>
-                    </div>
-              </div>
-            </section>
-              <!-- Card ends here -->
-          </div>
-          <!-- 6th column ends here -->
+          
         </div>
       </section>
 
@@ -293,7 +191,7 @@
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
     <script src="js/taskManager.js"></script>
     <script src="js/index.js"></script>
