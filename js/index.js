@@ -129,10 +129,10 @@ const taskcard = document.querySelector("taskcard");
 taskcard.addEventListener("click",(event) => {
 // Check if a "Mark As Done" button was clicked
 if (event.target.classList.contains("done-button")) {
-   
+
     // Use console.log(event.target.parentElement) to see
     const parentTask =
-      event.target.parentElement.parentElementparentElement;
+      event.target.parentElement.parentElement.parentElement
     // Get the taskId of the parent Task and turn it into a number.
     const taskId = Number(parentTask.dataset.taskId);
     // Get the task from the TaskManager using the taskId
