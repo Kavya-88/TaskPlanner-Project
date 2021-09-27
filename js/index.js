@@ -1,4 +1,4 @@
-const taskLists = new TaskManager(0);
+const taskManager = new TaskManager(0);
 
 // const form = document.querySelector("#Modal");
 
@@ -116,17 +116,25 @@ console.log(validateStatus.value);
       valFail=0;
       return;
     } else {
-      taskLists.addTask(name1.value,validateDescription.value,validateAssignedTo.value,validateDueDate.value,validateStatus.value);
-    console.log(taskLists.tasks)
-    taskLists.render();
+      taskManager.addTask(
+        name1.value,
+        validateDescription.value,
+        validateAssignedTo.value,
+        validateDueDate.value,
+        validateStatus.value
+        );
+    // console.log(taskManager.tasks)
+    taskManager.render();
+   }
   }
-  
-return;
-}
+//    return;
+// }
+
+
 //Adding Task list step 8 
-const taskcard = document.querySelector("taskcard");
+const taskList = document.querySelector("#task-list");
 // Add an 'onclick' event listener to the Tasks List
-taskcard.addEventListener("click",(event) => {
+taskList.addEventListener("click",(event) => {
 // Check if a "Mark As Done" button was clicked
 if (event.target.classList.contains("done-button")) {
    // Get the correct parent Task, yours might be slightly different
@@ -138,17 +146,17 @@ if (event.target.classList.contains("done-button")) {
     // Get the task from the TaskManager using the taskId
     const task = taskManager.getTaskById(taskId);
     // Update the task status to 'DONE'
-    task.status = "Done";
+    task.tstatus = "Done";
     
-
     // Render the tasks
     taskManager.render();
 }
 });
 
+
     
 //     console.log(date.value);
-    
+
 
 
 

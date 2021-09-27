@@ -11,10 +11,17 @@ function createTaskHtml (id, myName, description, assignedto, dueDate, status){
     <p>Description: ${description}</p>
     <p>Assigned to: ${assignedto}</p>
     <p> Duedate: ${dueDate}</p>
+    <div class="col-6">
     <p> Status: ${status}</p>
-    <button type="button" class="btn btn-success">Edit</button>
+    </div>
+    <div class="card-footer row">
+    <div class="col-3">
+    <button class="btn btn-success done-button">Done</button>
+    </div>
+    <div class="col-3">
     <button type="button" class="btn btn-danger">Delete</button>
-    <button class="btn btn-outline-success done-button">Done</button>
+    </div>
+      </div>
       </div>
 </li>`
 
@@ -34,24 +41,24 @@ class TaskManager {
     }
   
     // Create the addTask method
-    addTask(myName, description, assignedTo, dueDate, status) {
+    addTask(myName, description, assignedTo, dueDate, tstatus) {
       // Create a task object that we will push to the list of tasks
       
-      const newtask = {
+      const task = {
         id:this.currentId++,
           name:myName,
           description: description,
           assignedTo: assignedTo,
           dueDate: dueDate,
-          status: status,
+          tstatus: tstatus,
       };
     
   // Increment the current Id for each new task
       // this.currentId++,
      
-      this.tasks.push(newtask);
+      this.tasks.push(task);
       document.forms[0].reset();
-      alert("Task added", {newtask})
+      alert("Task added", {task})
     }
 
     getTaskById(taskId) {
@@ -77,19 +84,19 @@ class TaskManager {
       // Loop over our tasks and create the html, storing it in the array
     for (let i = 0; i < this.tasks.length; i++) {
       // Get the current task in the loop
-      const newtask = this.tasks[i];
+      const task = this.tasks[i];
       // Format the date
-      const date = new Date(newtask.dueDate);
+      const date = new Date(task.dueDate);
       const formattedDate =
         date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear();
       // Create the task html
       const taskHtml = createTaskHtml(
-        newtask.id,
-        newtask.name,
-        newtask.description,
-        newtask.assignedTo,
+        task.id,
+        task.name,
+        task.description,
+        task.assignedTo,
         formattedDate,
-        newtask.status
+        task.tstatus
       );
       // Push it to the tasksHtmlList array
       taskHtmlList.push(taskHtml);
@@ -99,7 +106,7 @@ class TaskManager {
     const tasksHtml = taskHtmlList.join("\n");
 
     // Set the inner html of the tasksList on the page
-    const taskLists = document.querySelector("#taskcard");
+    const taskLists = document.querySelector("#task-list");
     taskLists.innerHTML = tasksHtml;
     }
     
