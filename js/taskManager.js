@@ -4,8 +4,9 @@ function createTaskHtml (id, myName, description, assignedto, dueDate, status){
   //Within this createTaskHtml function, create a string using template literals, copying across one of your tasks that we hardcoded in earlier in task 3 from the index.html
   //Using the template literal placeholders (${}), replace each text section of the task HTML with the correct parameter
   const html = `
-  <li class="card" data-task-id="${id}" style="width: 18rem;" id="taskcard">
-  <div class="card-body">
+  <li class="card" data-task-id="${id}" style="width: 20rem;" id="taskcard">
+  <div class="col-auto">
+  <div class="p-2 bd-highlight">
     <h5 class="card-title">Task</h5>
     <p class="card-text">Name: ${myName}</p>
     <p>Description: ${description}</p>
@@ -21,6 +22,7 @@ function createTaskHtml (id, myName, description, assignedto, dueDate, status){
     <div class="col-3">
     <button type="button" class="btn btn-danger">Delete</button>
     </div>
+      </div>
       </div>
       </div>
 </li>`

@@ -82,35 +82,6 @@ console.log(validateStatus.value);
   errMsg5.style.color = "#eeeeee";
 }
 
-// console.log(validateStatus.value);
-//   const date = validateDueDate;
-  // if(date.value === "dd/mm/yyyy"){
-  //     errMsg5.innerHTML ="Select the correct date";
-  //     errMsg5.style.color = "#ff0000";
-  //     date.focus();
-  //     } else {
-  //     errMsg5.innerHTML = "All good ";
-  //     errMsg5.style.color = "#eeeeee";
-  //   }
-  //*
-//   validateDueDate.onclick = () => {
-//     let now = new Date();
-//     let month = now.getMonth() + 1;
-//     if (month < 10) {
-//         month = "0" + month;
-//     }
-//     let currentDate = now.getFullYear() + "-" + month + "-" + now.getDate();
-//     validateDueDate.setAttribute("min", currentDate);
-// };
-// validateDueDate.addEventListener("focusout", () => {
-//   taskDateData = validateDueDate.value;
-//   errorMessage = " Enter the correct date";
-//   !taskDateData
-//       ? errorMessageGenerator(validateDueDate, spanError[3], "", errorMessage)
-//       : errorMessageStyleReset(validateDueDate, spanError[3]);
-//   updateSubmission();
-// });
-//*************************
   
     if (valFail >0) {
       valFail=0;
@@ -140,7 +111,7 @@ if (event.target.classList.contains("done-button")) {
 
     // Use console.log(event.target.parentElement) to see
     const parentTask =
-    event.target.parentElement.parentElement.parentElement.parentElement;
+    event.target.parentElement.parentElement.parentElement.parentElement.parentElement;
     // Get the taskId of the parent Task and turn it into a number.
     const taskId = Number(parentTask.dataset.taskId);
     // Get the task from the TaskManager using the taskId
