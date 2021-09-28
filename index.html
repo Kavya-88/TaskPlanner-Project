@@ -26,7 +26,7 @@
 
     <!-- Button trigger modal -->
     <section class="container mt-5">
-<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#createTaskModal">Create Task</button>
+<button type="button" class="btn button" data-bs-toggle="modal" data-bs-target="#createTaskModal">Create Task</button>
 
 <!-- Modal -->
 <div class="modal fade" id="createTaskModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
@@ -116,8 +116,8 @@
       </div>
       <div class="modal-footer">
 
-        <button type="button" class="btn btn-secondary" id="close" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-success" id="savechanges" value ="Valid Name">Save changes</button>
+        <button type="button" class="btn btn-outline-secondary" id="close" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-outline-success" id="savechanges" value ="Valid Name">Save changes</button>
         
       </div>
       
@@ -126,11 +126,22 @@
 </div>
 
 <!-- formendbutton here -->
-</section>
-<section>
-      <h2 class="mt-5">Task Layout</h2> 
+<!-- </section> -->
+<!-- <section> -->
+      <h2 class="mt-5 text-center">Task Layout</h2> 
   </section>
   <!-- Modal ends here --> 
+
+  <!-- grid-column starts here -->
+  <!-- <section class="container">
+  <div id="grid">
+    <div id="item1">To Do</div>
+    <div id="item2">In Progress</div>
+    <div id="item3">Review</div>
+    <div id="item4">Done</div>
+  </div>
+</section> -->
+  <!-- grid-column ends here -->
 
   
 
@@ -163,20 +174,23 @@
 
 
     <!-- Column ends here -->
-    <!-- <div class="flex-container">
-       <h3 class="text-center">Tasks:</h3>
-      <div>
-        <ul class="list-group" id="task-list"></ul>
-      </div>
-    </div> -->
-
-
-    <div class="d-flex bd-highlight">
-      <!-- <h3 class="text-center">Tasks:</h3> -->
-      <div>
-        <div id="task-list"></div>
+      
+        <div class="task-list-container">
+    <div class="d-flex">
+       <!-- <h3 class="text-center">Tasks:</h3> -->
+      <div class="d-flex mt-3" id="task-list"></div>
+        <!-- <ul class="col" id="task-list"></ul> -->
       </div>
     </div>
+ 
+
+
+    <!-- <div class="d-flex bd-highlight">  -->
+      <!-- <h3 class="text-center">Tasks:</h3> -->
+      <!-- <div> -->
+        <!-- <div id="task-list"></div> -->
+      <!-- </div> -->
+    <!-- </div> -->
 
     <!-- Footer starts here -->
     <div class="container mt-5 text-center">Copyright 2021. Created by Kavya and Uma</div>

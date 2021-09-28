@@ -1,32 +1,71 @@
-.textbox {
+/* .textbox {
     width: 200px;
-}
+} */
 
-.card {
-    border: 2px solid black;
-    background-color:snow;
-    margin: 10px;
-    width: 18rem;
-}
-
-h1 {
-    color: red;
+.button {
+    background-color: rgb(131, 179, 179);
     font-style: italic;
 }
 
+.done-button {
+    background-color: rgb(82, 112, 82);
+    font-style: italic;
+}
+.delete-button {
+    background-color: rgb(143, 86, 86);
+    font-style: italic;
+}
+
+/* .card-title {
+    font-style: italic;
+} */
+
+.card {
+    border: 2px solid black;
+    background-color: hsla(120, 60%, 70%, 0.3);
+    margin: 10px;
+    width: 18rem;
+    font-style: italic;
+    /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 18px 26px 0 rgba(0,0,0,0.2);
+  }
+
+h1 {
+    color: black;
+    font-style: italic;
+    background-color: rgb(123, 143, 180);
+}
+
 body {
-    background-color: rgb(216, 200, 179);
+    background-color: wheat;
 }
 
 h2 {
-    color: red;
+    color: black;
     font-family:cursive ;
+    background-color: rgb(112, 79, 112);
 }
 
-.flex-container {
+/* .flex-container {
     display: flex;
     padding: 10px;
     
+} */
+
+
+#grid {
+    display: grid;
+    height: 100px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 100px;
 }
+
 
 

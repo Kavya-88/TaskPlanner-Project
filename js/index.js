@@ -117,7 +117,7 @@ if (event.target.classList.contains("done-button")) {
 
     // Use console.log(event.target.parentElement) to see
     const parentTask =
-    event.target.parentElement.parentElement.parentElement.parentElement.parentElement;
+    event.target.parentElement.parentElement;
     // Get the taskId of the parent Task and turn it into a number.
     const taskId = Number(parentTask.dataset.taskId);
     // Get the task from the TaskManager using the taskId
@@ -131,7 +131,7 @@ if (event.target.classList.contains("done-button")) {
 //task 10
 if(event.target.classList.contains('delete-button')) {
 const parentTask = 
-event.target.parentElement.parentElement.parentElement.parentElement.parentElement;
+event.target.parentElement.parentElement;
 const taskId = Number(parentTask.dataset.taskId);
 taskManager.deleteTask(taskId);
 taskManager.save();

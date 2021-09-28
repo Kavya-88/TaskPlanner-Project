@@ -5,27 +5,17 @@ function createTaskHtml (id, myName, description, assignedto, dueDate, status){
   //Using the template literal placeholders (${}), replace each text section of the task HTML with the correct parameter
   const html = `
   <div class="card" data-task-id="${id}" style="width: 20rem;" id="taskcard">
-  <div class="col-auto">
-  <div class="p-2 bd-highlight">
+  <div class="card-body p-2 bd-highlight">
     <h5 class="card-title">Task</h5>
-    <p class="card-text">Name: ${myName}</p>
+    <p class="card-text">Task name: ${myName}</p>
     <p>Description: ${description}</p>
     <p>Assigned to: ${assignedto}</p>
     <p> Duedate: ${dueDate}</p>
-    <div class="col-6">
     <p> Status: ${status}</p>
+    <button class="btn btn done-button">Done</button>
+    <button type="button" class="btn btn delete-button">Delete</button>
     </div>
-    <div class="card-footer row">
-    <div class="col-3">
-    <button class="btn btn-outline-success done-button">Done</button>
-    </div>
-    <div class="col-3">
-    <button type="button" class="btn btn-outline-danger delete-button">Delete</button>
-    </div>
-      </div>
-      </div>
-      </div>
-</div>`
+    </div>`
 
 //Return the HTML from the function
  return html;
