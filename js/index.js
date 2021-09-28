@@ -128,6 +128,15 @@ if (event.target.classList.contains("done-button")) {
     // Render the tasks
     taskManager.render();
 }
+//task 10
+if(event.target.classList.contains('delete-button')) {
+const parentTask = 
+event.target.parentElement.parentElement.parentElement.parentElement.parentElement;
+const taskId = Number(parentTask.dataset.taskId);
+taskManager.deleteTask(taskId);
+taskManager.save();
+taskManager.render();
+}
 });
 
 

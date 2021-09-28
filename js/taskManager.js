@@ -17,10 +17,10 @@ function createTaskHtml (id, myName, description, assignedto, dueDate, status){
     </div>
     <div class="card-footer row">
     <div class="col-3">
-    <button class="btn btn-success done-button">Done</button>
+    <button class="btn btn-outline-success done-button">Done</button>
     </div>
     <div class="col-3">
-    <button type="button" class="btn btn-danger">Delete</button>
+    <button type="button" class="btn btn-outline-danger delete-button">Delete</button>
     </div>
       </div>
       </div>
@@ -67,9 +67,9 @@ class TaskManager {
       // Create a variable to store the found task
       let foundTask;
       // Loop over the tasks and find the task with the id passed as a parameter
-      for (let i = 0; i < this.tasks.length; i++) {
+      for (let i = 0; i < this._tasks.length; i++) {
         // Get the current task in the loop
-        const task = this.tasks[i];
+        const task = this._tasks[i];
         // Check if its the right task by comparing the task's id to the id passed as a parameter
         if (task.id === taskId) {
           // Store the task in the foundTask variable
@@ -84,9 +84,9 @@ class TaskManager {
     render() {
       let taskHtmlList = [];
       // Loop over our tasks and create the html, storing it in the array
-    for (let i = 0; i < this.tasks.length; i++) {
+    for (let i = 0; i < this._tasks.length; i++) {
       // Get the current task in the loop
-      const task = this.tasks[i];
+      const task = this._tasks[i];
       // Format the date
       const date = new Date(task.dueDate);
       const formattedDate =
@@ -111,6 +111,8 @@ class TaskManager {
     const taskLists = document.querySelector("#task-list");
     taskLists.innerHTML = tasksHtml;
     }
+
+    //task 9
     save() {
       // Create a JSON string of the tasks
       const tasksJson = JSON.stringify(this._tasks);
@@ -134,6 +136,18 @@ class TaskManager {
         const currentId = localStorage.getItem('currentId');
         this.currentId = Number(currentId);
       }
+    }
+
+    //task 10
+    deleteTask(taskId) {
+      const newTasks = [];
+      for(let i = 0; i < this._tasks.length; i++) {
+        const task = this._tasks[i];
+        if(task.id !== taskId) {
+          newTasks.push(task);
+        }
+      }
+      this._tasks = newTasks;
     }
   }
   
