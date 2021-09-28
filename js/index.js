@@ -18,6 +18,12 @@ let errMsg2 = document.querySelector("#errMsg2");
 let errMsg3 = document.querySelector("#errMsg3");
 let errMsg4 = document.querySelector("#errMsg4");
 let errMsg5 = document.querySelector("#errMsg5");
+
+// current and future date validation Step
+var today = new Date().toISOString().split('T')[0];
+  console.log("today" + today);
+ validateDueDate.setAttribute('min', today);
+
 btnSub2.addEventListener("click", validateBox);
 // let validationFail = 0;
 function validateBox() {
@@ -117,7 +123,7 @@ if (event.target.classList.contains("done-button")) {
 
     // Use console.log(event.target.parentElement) to see
     const parentTask =
-    event.target.parentElement.parentElement.parentElement.parentElement.parentElement;
+    event.target.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement;
     // Get the taskId of the parent Task and turn it into a number.
     const taskId = Number(parentTask.dataset.taskId);
     // Get the task from the TaskManager using the taskId
@@ -131,7 +137,7 @@ if (event.target.classList.contains("done-button")) {
 //task 10
 if(event.target.classList.contains('delete-button')) {
 const parentTask = 
-event.target.parentElement.parentElement.parentElement.parentElement.parentElement;
+event.target.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement;
 const taskId = Number(parentTask.dataset.taskId);
 taskManager.deleteTask(taskId);
 taskManager.save();

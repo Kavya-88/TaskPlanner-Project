@@ -3,25 +3,23 @@
 function createTaskHtml (id, myName, description, assignedto, dueDate, status){
   //Within this createTaskHtml function, create a string using template literals, copying across one of your tasks that we hardcoded in earlier in task 3 from the index.html
   //Using the template literal placeholders (${}), replace each text section of the task HTML with the correct parameter
-  const html = `
-  <div class="card" data-task-id="${id}" style="width: 20rem;" id="taskcard">
-  <div class="col-auto">
+  const html =`<div class="col-auto" data-task-id="${id}">
   <div class="p-2 bd-highlight">
-    <h5 class="card-title">Task</h5>
-    <p class="card-text">Name: ${myName}</p>
-    <p>Description: ${description}</p>
-    <p>Assigned to: ${assignedto}</p>
-    <p> Duedate: ${dueDate}</p>
-    <div class="col-6">
-    <p> Status: ${status}</p>
-    </div>
-    <div class="card-footer row">
+  <div class="card" style="width: 20rem;">
+  <div class="card-body">
+  <h5 class="card-title">Task Name: ${myName}</h5>
+  <p class="description text-start">Description: ${description}</p>
+  <p class="card-text">Assigned to: ${assignedto}</p>
+  <p class="card-text">Due Date: ${dueDate}</p>
+  <p class="card-text">Status: ${status}</p>
+<div class="card-footer row">
     <div class="col-3">
     <button class="btn btn-outline-success done-button">Done</button>
     </div>
     <div class="col-3">
     <button type="button" class="btn btn-outline-danger delete-button">Delete</button>
     </div>
+      </div>
       </div>
       </div>
       </div>

@@ -10,17 +10,20 @@
 
     <!-- My CSS -->
     <link href="./css/mystyles.css" rel="stylesheet">
-
-
-    <title>Task Planner Page</title>
-    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-    
-  </head>
+<title>Task Planner Page</title>
+    </head>
   <body>
     <h1 class="text-center">Task Planner</h1>
+    <!-- <nav class="navbar text-center" id="navbar">
+      <div class="container-fluid " >
+        <a class="navbar-brand" href="#" id="nav">
+          <img src="./images/icon 2.jpeg" alt="" width="35" height="25" class="img-thumbnail" >
+          Task Planner
+        </a>
+      </div>
+    </nav>
+    <br> -->
+
 
     
 
@@ -107,8 +110,7 @@
 
               <label for="dueDate" class="form-label" >Due date:</label>
               <span id="errMsg4"> </span>
-      
-            <input type="text" class="form-control datepicker" id="dueDate" name="dueDate" required>
+           <input type="date" id="dueDate" class="form-control" name="dueDate" min="2013-05-21" max="2022-05-01"  required>
            
           </div>
             <!-- Calendar ends here -->
@@ -127,79 +129,62 @@
 
 <!-- formendbutton here -->
 </section>
-<section>
+<!-- <section>
       <h2 class="mt-5">Task Layout</h2> 
-  </section>
+  </section> -->
   <!-- Modal ends here --> 
-
+<!-- tasklayout starts here -->
+<section class="container"> 
+  <div class="d-flex mb-3 row" id="task-list">
+        <div class="col-auto">
+    <!-- card1 starts here -->
+  <!-- <div class="p-2 bd-highlight">
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+    <h5 class="card-title">Task Name</h5>
+    <p class="description text-start">Description:</p>
+    <p class="card-text">Assigned to:</p>
+    <p class="card-text">Status:</p>
+    <p class="card-text">Due Date: dd/mm/yy</p>
   
+  <div class="card-body">
+     Done button -->
+    <!-- <button type="button" class="btn btn-success">Edit</button>
+    <button type="button" class="btn btn-danger">Delete</button>
+  </div>
+</div>
+</div>
+</div> -->  
+  <!-- card1 ends here -->
+</div>
 
-    <!-- Column starts here -->
-      <!-- <section class="flex-container" id="taskcard"> -->
-        <!-- <div class="row"> -->
-
-          <!-- 1st column starts here -->
-          <!-- <div class="col"> -->
-            <!-- Card starts here -->
-            <!-- <section class="container mt-3">
-            <div class="card" style="width: 18rem;" id="taskcard">
-              <div class="card-body">
-                <h5 class="card-title">Task</h5>
-                <p class="card-text">Name: Shopping</p>
-                <p>Description: Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                <p>Assigned to: Kavya</p>
-                <p>Due Date: 05/09/2021</p>
-                <p>Status: In Progress</p>
-                <button type="button" class="btn btn-success">Edit</button>
-                <button type="button" class="btn btn-danger">Delete</button>
-                  </div>
-            </div>
-          </section> -->
-            <!-- Card ends here -->
-          <!-- </div> -->
           
-        <!-- </div> -->
-      <!-- </section> -->
-
-
-    <!-- Column ends here -->
-    <!-- <div class="flex-container">
-       <h3 class="text-center">Tasks:</h3>
-      <div>
-        <ul class="list-group" id="task-list"></ul>
-      </div>
-    </div> -->
-
-
-    <div class="d-flex bd-highlight">
-      <!-- <h3 class="text-center">Tasks:</h3> -->
-      <div>
-        <div id="task-list"></div>
-      </div>
-    </div>
+<!-- task layout ends here  -->
+</div>
+</section>
 
     <!-- Footer starts here -->
-    <div class="container mt-5 text-center">Copyright 2021. Created by Kavya and Uma</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+ <div class="container mt-5 text-center">Copyright 2021. Created by Kavya and Uma</div>
 
     <!-- Footer ends here -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Optional JavaScript; choose one of the two! -->
+<!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
@@ -210,13 +195,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
     <script src="js/taskManager.js"></script>
     <script src="js/index.js"></script>
-    <script type="text/javascript">
-   
-      $('.datepicker').datepicker({ 
-          startDate: new Date()
-      });
     
-    </script>
+  
     
   </body>
 </html>

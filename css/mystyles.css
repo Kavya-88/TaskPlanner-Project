@@ -1,6 +1,24 @@
 .textbox {
     width: 200px;
 }
+/* #navbar{
+    background-color:rgb(240, 102, 102)
+}
+#nav{
+    color: rgb(0,128,0);
+    font-weight: bold;
+    font-family: cursive;
+    font-display:initial;
+    font-size: 2rem;
+    float:right;
+}
+.img-responsive {
+    height: auto;
+    width: auto;
+    max-height: 400px;
+    max-width:  400px;
+} */
+
 
 .card {
     border: 2px solid black;
@@ -10,12 +28,12 @@
 }
 
 h1 {
-    color: red;
+    color: green;
     font-style: italic;
 }
 
 body {
-    background-color: rgb(216, 200, 179);
+    background-color: rgb(215, 221, 215)
 }
 
 h2 {
@@ -24,7 +42,7 @@ h2 {
 }
 
 .flex-container {
-    display: flex;
+    display:inline-flex;
     padding: 10px;
     
 }
