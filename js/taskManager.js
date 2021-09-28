@@ -4,7 +4,7 @@ function createTaskHtml (id, myName, description, assignedto, dueDate, status){
   //Within this createTaskHtml function, create a string using template literals, copying across one of your tasks that we hardcoded in earlier in task 3 from the index.html
   //Using the template literal placeholders (${}), replace each text section of the task HTML with the correct parameter
   const html = `
-  <li class="card" data-task-id="${id}" style="width: 20rem;" id="taskcard">
+  <div class="card" data-task-id="${id}" style="width: 20rem;" id="taskcard">
   <div class="col-auto">
   <div class="p-2 bd-highlight">
     <h5 class="card-title">Task</h5>
@@ -25,7 +25,7 @@ function createTaskHtml (id, myName, description, assignedto, dueDate, status){
       </div>
       </div>
       </div>
-</li>`
+</div>`
 
 //Return the HTML from the function
  return html;
@@ -111,12 +111,35 @@ class TaskManager {
     const taskLists = document.querySelector("#task-list");
     taskLists.innerHTML = tasksHtml;
     }
-    
+    save() {
+      // Create a JSON string of the tasks
+      const tasksJson = JSON.stringify(this._tasks);
+  
+      // Store the JSON string in localStorage
+      localStorage.setItem("tasks", tasksJson);
+  
+      // Convert the currentId to a string;
+      const currentId = String(this.currentId);
+  
+      // Store the currentId in localStorage
+      localStorage.setItem("currentId", currentId);
+    }
+
+    load() {
+      if(localStorage.getItem('tasks')) {
+        const tasksJson = localStorage.getItem('tasks');
+        this._tasks = JSON.parse(tasksJson);
+      }
+      if(localStorage.getItem('currentId')) {
+        const currentId = localStorage.getItem('currentId');
+        this.currentId = Number(currentId);
+      }
+    }
   }
   
   // let taskList = new TaskManager();
   // taskList.addTasks(name, description, assignedTo, dueDate, status);
   // console.log(taskList.tasks);
 
- 
+  
 

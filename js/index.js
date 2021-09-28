@@ -1,5 +1,8 @@
 const taskManager = new TaskManager(0);
 
+taskManager.load();
+taskManager.render();
+
 // const form = document.querySelector("#Modal");
 
 let name1 = document.getElementById('myName');
@@ -94,8 +97,11 @@ console.log(validateStatus.value);
         validateDueDate.value,
         validateStatus.value
         );
-    // console.log(taskManager.tasks)
+    console.log(taskManager.tasks)
+    // localStorage.setItem('MyTaskList', JSON.stringify(taskManager));
+    taskManager.save();
     taskManager.render();
+    
    }
   }
 //    return;
@@ -118,7 +124,7 @@ if (event.target.classList.contains("done-button")) {
     const task = taskManager.getTaskById(taskId);
     // Update the task status to 'DONE'
     task.tstatus = "Done";
-    
+    taskManager.save();
     // Render the tasks
     taskManager.render();
 }
