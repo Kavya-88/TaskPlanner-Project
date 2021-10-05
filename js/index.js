@@ -128,12 +128,18 @@ if (event.target.classList.contains("done-button")) {
     const taskId = Number(parentTask.dataset.taskId);
     // Get the task from the TaskManager using the taskId
     const task = taskManager.getTaskById(taskId);
+
     // Update the task status to 'DONE'
     task.tstatus = "Done";
     taskManager.save();
     // Render the tasks
     taskManager.render();
-}
+} 
+
+// if(event.target.classList.contains('done-button')) {
+
+// }
+
 //task 10
 if(event.target.classList.contains('delete-button')) {
 const parentTask = 

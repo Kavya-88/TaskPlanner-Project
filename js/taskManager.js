@@ -11,7 +11,7 @@ function createTaskHtml (id, myName, description, assignedto, dueDate, status){
   <p class="card-text">Assigned to: ${assignedto}</p>
   <p class="card-text">Due Date: ${dueDate}</p>
   <p class="card-text">Status: ${status}</p>
-<button class="btn done-button">Done</button>
+<button class="btn done-button ${status === "Done" ? "invisible" : "visible"}">Done</button>
     <button type="button" class="btn delete-button">Delete</button>
     </div>
     </div>`
