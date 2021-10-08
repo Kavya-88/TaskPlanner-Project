@@ -3,14 +3,15 @@
 function createTaskHtml (id, myName, description, assignedto, dueDate, status){
   //Within this createTaskHtml function, create a string using template literals, copying across one of your tasks that we hardcoded in earlier in task 3 from the index.html
   //Using the template literal placeholders (${}), replace each text section of the task HTML with the correct parameter
-  const html =`<div class="card col-auto" data-task-id="${id}" style="width: 20rem;">
+  const html =`<div class="card col-auto" data-task-id="${id}" style="width: 18rem;">
   <div class="card-body p-2 bd-highlight">
   <h5 class="card-title justify text-center">Task Card</h5>
   <p class="card-text">Task Name: ${myName}</p>
   <p class="description text-start">Description: ${description}</p>
   <p class="card-text">Assigned to: ${assignedto}</p>
   <p class="card-text">Due Date: ${dueDate}</p>
-  <p class="card-text">Status: ${status}</p>
+  
+  <p class="card-text status">Status: ${status}</p>
 <button class="btn done-button ${status === "Done" ? "invisible" : "visible"}">Done</button>
     <button type="button" class="btn delete-button">Delete</button>
     </div>
@@ -59,12 +60,14 @@ class TaskManager {
       for (let i = 0; i < this._tasks.length; i++) {
         // Get the current task in the loop
         const task = this._tasks[i];
+        // this._tasks.find(task => {
         // Check if its the right task by comparing the task's id to the id passed as a parameter
         if (task.id === taskId) {
           // Store the task in the foundTask variable
           foundTask = task;
         }
       }
+      // );
       // Return the found task
       return foundTask;
     }
@@ -72,10 +75,18 @@ class TaskManager {
     //Create a variable tasksHtmlList and assign it an empty array. This will hold the HTML of all the tasks.
     render() {
       let taskHtmlList = [];
+      //extra challenge starts here
+      // let doneHtmlList = [];
+      // let reviewHtmlList = [];
+      // let todoHtmlList = [];
+      // let inprogressHtmlList = [];
+      //extra challenge ends here
+
       // Loop over our tasks and create the html, storing it in the array
     for (let i = 0; i < this._tasks.length; i++) {
-      // Get the current task in the loop
+     // Get the current task in the loop
       const task = this._tasks[i];
+    // this._tasks.forEach(task => {
       // Format the date
       const date = new Date(task.dueDate);
       const formattedDate =
@@ -91,7 +102,32 @@ class TaskManager {
       );
       // Push it to the tasksHtmlList array
       taskHtmlList.push(taskHtml);
+
+        //extra challenge starts here
+      // if (task.status === 'review') {
+      //   reviewHtmlList.push(taskHtml);
+      // } else if (task.status === 'to-do') {
+      //   todoHtmlList.push(taskHtml);
+      // } else if (task.status === 'in progress') {
+      //   inprogressHtmlList.push(taskHtml);
+      // } else {
+      //   doneHtmlList.push(taskHtml);
+      // }
+      //extra challenge ends here
       }
+      // );
+
+      //extra challenge starts here
+      // let reviewHtml = reviewHtmlList.join("\n");
+      // document.getElementById('review').innerHTML = reviewHtml;
+      // let todoHtml = todoHtmlList.join("\n");
+      // document.getElementById('todo').innerHTML = todoHtml;
+      // let inprogressHtml = inprogressHtmlList.join("\n");
+      // document.getElementById('inprogress').innerHTML = inprogressHtml;
+      // let doneHtml = doneHtmlList.join("\n");
+      // document.getElementById('done').innerHTML = doneHtml;
+      //extra challenge ends here
+
     // Create the tasksHtml by joining each item in the tasksHtmlList
     // with a new line in between each item.
     const tasksHtml = taskHtmlList.join("\n");
@@ -104,13 +140,13 @@ class TaskManager {
     //task 9
     save() {
       // Create a JSON string of the tasks
-      const tasksJson = JSON.stringify(this._tasks);
+      let tasksJson = JSON.stringify(this._tasks);
   
       // Store the JSON string in localStorage
       localStorage.setItem("tasks", tasksJson);
   
       // Convert the currentId to a string;
-      const currentId = String(this.currentId);
+      let currentId = String(this.currentId);
   
       // Store the currentId in localStorage
       localStorage.setItem("currentId", currentId);

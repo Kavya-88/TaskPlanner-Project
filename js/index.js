@@ -11,6 +11,8 @@ let name1 = document.getElementById('myName');
   const validateDueDate = document.querySelector("#dueDate");
   const validateStatus = document.querySelector("#status");
 
+
+
 let btnSub2 = document.querySelector("#savechanges");
 
 let errMsg1 = document.querySelector("#errMsg1");
@@ -125,7 +127,7 @@ if (event.target.classList.contains("done-button")) {
     const parentTask =
     event.target.parentElement.parentElement;
     // Get the taskId of the parent Task and turn it into a number.
-    const taskId = Number(parentTask.dataset.taskId);
+    let taskId = Number(parentTask.dataset.taskId);
     // Get the task from the TaskManager using the taskId
     const task = taskManager.getTaskById(taskId);
 
@@ -135,10 +137,6 @@ if (event.target.classList.contains("done-button")) {
     // Render the tasks
     taskManager.render();
 } 
-
-// if(event.target.classList.contains('done-button')) {
-
-// }
 
 //task 10
 if(event.target.classList.contains('delete-button')) {
@@ -150,6 +148,12 @@ taskManager.save();
 taskManager.render();
 }
 });
+
+
+
+
+
+
 
 
     
