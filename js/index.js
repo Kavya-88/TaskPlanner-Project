@@ -107,7 +107,8 @@ console.log(validateStatus.value);
     // localStorage.setItem('MyTaskList', JSON.stringify(taskManager));
     taskManager.save();
     taskManager.render();
-    
+    // clearFormFields();
+    // $("#exampleModal").modal("hide");
    }
   }
 //    return;
