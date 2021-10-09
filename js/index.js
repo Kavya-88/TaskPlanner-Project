@@ -11,6 +11,8 @@ let name1 = document.getElementById('myName');
   const validateDueDate = document.querySelector("#dueDate");
   const validateStatus = document.querySelector("#status");
 
+
+
 let btnSub2 = document.querySelector("#savechanges");
 
 let errMsg1 = document.querySelector("#errMsg1");
@@ -124,27 +126,35 @@ if (event.target.classList.contains("done-button")) {
 
     // Use console.log(event.target.parentElement) to see
     const parentTask =
-    event.target.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement;
+    event.target.parentElement.parentElement;
     // Get the taskId of the parent Task and turn it into a number.
-    const taskId = Number(parentTask.dataset.taskId);
+    let taskId = Number(parentTask.dataset.taskId);
     // Get the task from the TaskManager using the taskId
     const task = taskManager.getTaskById(taskId);
+
     // Update the task status to 'DONE'
     task.tstatus = "Done";
     taskManager.save();
     // Render the tasks
     taskManager.render();
-}
+} 
+
 //task 10
 if(event.target.classList.contains('delete-button')) {
 const parentTask = 
-event.target.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement;
+event.target.parentElement.parentElement;
 const taskId = Number(parentTask.dataset.taskId);
 taskManager.deleteTask(taskId);
 taskManager.save();
 taskManager.render();
 }
 });
+
+
+
+
+
+
 
 
     
