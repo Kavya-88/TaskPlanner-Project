@@ -137,7 +137,10 @@ if (event.target.classList.contains("done-button")) {
     taskManager.save();
     // Render the tasks
     taskManager.render();
+    // **********************
+    
 } 
+
 
 //task 10
 if(event.target.classList.contains('delete-button')) {

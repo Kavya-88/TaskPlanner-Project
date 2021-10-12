@@ -88,6 +88,55 @@ h2 {
     padding: 10px;
     
 } */
+footer {
+    width: 100%;
+    background-color: rgb(49, 48, 48);
+    position: fixed;
+    bottom: 0px;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+ }
 
 
+ /* Multi Column Container
+.todo, .review, .in-progress, .done {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 15px;
+    
+}
+
+@media only screen and (max-width: 700px) {
+    .todo, .review, .in-progress, .done {
+        width: 100%; 
+    }
+  }
+
+@media only screen and (min-width: 700px) {
+    .todo, .review, .in-progress, .done {
+        width: 50%;
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    .todo, .review, .in-progress, .done {
+        width: 25%;
+    }
+  }
+
+.column-heading {
+    font-size: 1.2rem;
+    color: white;
+    padding: 0px 10px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 15px;
+    font-weight: bold;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} */
 
