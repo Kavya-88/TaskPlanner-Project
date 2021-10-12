@@ -109,7 +109,8 @@ console.log(validateStatus.value);
     // localStorage.setItem('MyTaskList', JSON.stringify(taskManager));
     taskManager.save();
     taskManager.render();
-    
+    // clearFormFields();
+    // $("#exampleModal").modal("hide");
    }
   }
 //    return;
@@ -137,7 +138,10 @@ if (event.target.classList.contains("done-button")) {
     taskManager.save();
     // Render the tasks
     taskManager.render();
+    // **********************
+    
 } 
+
 
 //task 10
 if(event.target.classList.contains('delete-button')) {

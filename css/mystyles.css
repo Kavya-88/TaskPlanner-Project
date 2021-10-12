@@ -108,4 +108,61 @@ footer {
     border-radius: 10px;
 }
 
+/* h2 {
+    color: black;
+    font-family:cursive ;
+    background-color: rgb(128, 93, 128);
+    border-radius: 10px;
+    margin-left: 200px;
+    margin-right: 200px;
+} */
+
+/* .flex-container {
+    display:inline-flex;
+    padding: 10px;
+    
+} */
+
+
+
+ /* Multi Column Container
+.todo, .review, .in-progress, .done {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 15px;
+    
+}
+
+@media only screen and (max-width: 700px) {
+    .todo, .review, .in-progress, .done {
+        width: 100%; 
+    }
+  }
+>>>>>>> 23d80f6a9a1da1e04ab07b2297813a6f17e94aad
+
+@media only screen and (min-width: 700px) {
+    .todo, .review, .in-progress, .done {
+        width: 50%;
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    .todo, .review, .in-progress, .done {
+        width: 25%;
+    }
+  }
+
+.column-heading {
+    font-size: 1.2rem;
+    color: white;
+    padding: 0px 10px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 15px;
+    font-weight: bold;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} */
 

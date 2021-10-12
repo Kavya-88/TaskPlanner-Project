@@ -10,7 +10,6 @@ function createTaskHtml (id, myName, description, assignedto, dueDate, status){
   <p class="description text-start">Description: ${description}</p>
   <p class="card-text">Assigned to: ${assignedto}</p>
   <p class="card-text">Due Date: ${dueDate}</p>
-
   <p class="card-text status">Status: ${status}</p>
   
 <button class="btn done-button ${status === "Done" ? "invisible" : "visible"}">Done</button>
@@ -195,4 +194,6 @@ class TaskManager {
   // console.log(taskList.tasks);
 
   
+
+
 
