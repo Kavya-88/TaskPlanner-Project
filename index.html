@@ -14,6 +14,7 @@
     </head>
   <body>
     <h1 class="text-center heading1">Task Planner</h1>
+    
     <!-- <nav class="navbar text-center" id="navbar">
       <div class="container-fluid " >
         <a class="navbar-brand" href="#" id="nav">
@@ -96,10 +97,10 @@
           <span id="errMsg5"> </span>
             <select class="form-select mt-3" aria-label="status" id="status">
               <option value="status">Status</option>
-              <option value="todo">To Do</option>
-              <option value="inprogress">In Progress</option>
-              <option value="review">Review</option>
-              <option value="done">Done</option>
+              <option value="To-Do">To Do</option>
+              <option value="In-Progress">In Progress</option>
+              <option value="Review">Review</option>
+              <option value="Done">Done</option>
             </select>
             
             <!-- Status to ends here -->
@@ -129,29 +130,47 @@
 
 <!-- formendbutton here -->
 </section>
-<section>
-      <h2 class="mt-5 justify text-center">Tasks</h2> 
-  </section>
+<!-- <section> -->
+  
+  <!-- </section> -->
+<!-- Modal ends here --> 
 
-  <!-- Extra challenge starts here -->
-<!-- <section class="container" id="column-view">
+
+<div id="cardlist" class="container mt-5">
   <div class="row">
-    <div class="col-md" id="todo">To Do</div>
-    <div class="col-md" id="inprogress">In Progress</div>
-    <div class="col-md" id="review">Review</div>
-    <div class="col-md" id="done">Done</div>
+    <div class="col-md todo">
+      <h3 style="text-align:center;">To-Do</h3>
+      <div id="todolist" class="row">
+
+      </div>
+    </div> 
+    <div class="col-md inprogress">
+      <h3 style="text-align:center;">In-Progress</h3>
+      <div id="inprogresslist" class="row">
+
+      </div>
+    </div>
+    <div class="col-md review">
+      <h3 style="text-align:center;">Review</h3>
+      <div id="reviewlist" class="row">
+
+      </div>
+    </div>
+    <div class="col-md done">
+      <h3 style="text-align:center;">Done</h3>
+      <div id="donelist" class="row">
+
+      </div>
+    </div>
   </div>
-</section> -->
-<!-- Extra challenge ends here -->
-
-
-  <!-- Modal ends here --> 
-
+</div>  
 
 <!-- tasklayout starts here -->
-<section class="container"> 
-  <div class="d-flex mb-3 row" id="task-list">
-        <div class="col-auto">
+<!-- <section class="container mt-5"> 
+  
+  <div class="mb-3 row">
+        <div class="col-md">
+          -->
     <!-- card1 starts here -->
   <!-- <div class="p-2 bd-highlight">
   <div class="card" style="width: 18rem;">
@@ -171,35 +190,35 @@
 </div>
 </div> -->  
   <!-- card1 ends here -->
-</div>
 
-          
+
+
+      <!-- </div>     -->
 <!-- task layout ends here  -->
-</div>
-</section>
+<!-- </div>
+</section> -->
+
+<!-- Extra challenge starts here -->
+<!-- <section class="container">
+  <div class="row" id="column-view">
+    <div class="col-md bg-success" id="to-do">To Do</div>
+    <div class="col-md bg-danger" id="in progress">In Progress</div>
+    <div class="col-md bg-warning text-dark" id="review">Review</div>
+    <div class="col-md bg-secondary" id="done">Done</div>
+  </div>
+</section> -->
+<!-- Extra challenge ends here -->
 
 
 
 
     <!-- Footer starts here -->
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 
 
 
- <div class="container mt-5 text-center">Copyright 2021. Created by Kavya and Uma</div>
+
+ <footer>Copyright 2021. Created by Kavya and Uma</footer>
 
     <!-- Footer ends here -->
 <!-- Optional JavaScript; choose one of the two! -->

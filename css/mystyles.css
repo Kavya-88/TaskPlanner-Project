@@ -71,23 +71,41 @@ h1 {
 }
 
 body {
-    background-color: rgb(215, 221, 215)
+    background-color: rgb(215, 221, 215);
+    background-image: url("../images/task2.jpg");
 }
 
-h2 {
-    color: black;
-    font-family:cursive ;
-    background-color: rgb(128, 93, 128);
+
+
+footer {
+    width: 100%;
+    background-color: rgb(49, 48, 48);
+    position: fixed;
+    bottom: 0px;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+ }
+
+.todo {
+    background-color: rgb(180, 134, 134);
     border-radius: 10px;
-    margin-left: 200px;
-    margin-right: 200px;
 }
 
-/* .flex-container {
-    display:inline-flex;
-    padding: 10px;
-    
-} */
+.inprogress {
+    background-color: rgb(185, 185, 128);
+    border-radius: 10px;
+}
 
+.review {
+    background-color: thistle;
+    border-radius: 10px;
+}
+
+.done {
+    background-color: rgb(143, 158, 114);
+    border-radius: 10px;
+}
 
 

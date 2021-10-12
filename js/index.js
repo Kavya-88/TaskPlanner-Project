@@ -23,7 +23,7 @@ let errMsg5 = document.querySelector("#errMsg5");
 
 // current and future date validation Step
 var today = new Date().toISOString().split('T')[0];
-  console.log("today" + today);
+  // console.log("today" + today);
  validateDueDate.setAttribute('min', today);
 
 btnSub2.addEventListener("click", validateBox);
@@ -117,7 +117,8 @@ console.log(validateStatus.value);
 
 
 //Adding Task list step 8 
-const taskList = document.querySelector("#task-list");
+const taskList = document.querySelector("#cardlist");
+
 // Add an 'onclick' event listener to the Tasks List
 taskList.addEventListener("click",(event) => {
 // Check if a "Mark As Done" button was clicked
