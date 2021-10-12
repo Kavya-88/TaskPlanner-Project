@@ -29,8 +29,8 @@ Created By Uma, Kavya
 - Crome for devtools 
 
 ## Final Page Look
-- ![Final web page look Add task form ](./image/Add task.JPG)
-- ![Final web page look](./image/Final outcome.JPG)
+- ![Final web page look Add task form ](./images/Addtask.jpeg)
+- ![Final web page look](./images/Finaloutcome.jpeg)
 
 ## GitHub Page
 [GitHub Page](https://kavya-88.github.io/TaskPlanner-Project/)
