@@ -135,16 +135,16 @@ class TaskManager {
       //extra challenge starts here
       
       const todoHtml = todoHtmlList.join("\n");
-      document.getElementById('todolist').innerHTML = todoHtml;
+      document.getElementById('todocolumn').innerHTML = todoHtml;
 
        const inprogressHtml = inprogressHtmlList.join("\n");
-      document.getElementById('inprogresslist').innerHTML = inprogressHtml;
+      document.getElementById('inprogresscolumn').innerHTML = inprogressHtml;
 
       const reviewHtml = reviewHtmlList.join("\n");
-      document.getElementById('reviewlist').innerHTML = reviewHtml;
+      document.getElementById('reviewcolumn').innerHTML = reviewHtml;
 
        const doneHtml = doneHtmlList.join("\n");
-      document.getElementById('donelist').innerHTML = doneHtml;
+      document.getElementById('donecolumn').innerHTML = doneHtml;
       // extra challenge ends here
 
     }

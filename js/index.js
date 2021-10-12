@@ -118,7 +118,7 @@ console.log(validateStatus.value);
 
 
 //Adding Task list step 8 
-const taskList = document.querySelector("#cardlist");
+const taskList = document.querySelector("#cardcolumn");
 
 // Add an 'onclick' event listener to the Tasks List
 taskList.addEventListener("click",(event) => {
