@@ -116,7 +116,7 @@ class TaskManager {
         inprogressHtmlList.push(taskHtml);
       } else if (task.tstatus === 'Review') {
         reviewHtmlList.push(taskHtml);
-      } else if (task.tstatus === 'Done') {
+      } else {
         doneHtmlList.push(taskHtml);
       }
       // //extra challenge ends here
