@@ -74,14 +74,14 @@ body {
     background-color: rgb(215, 221, 215)
 }
 
-h2 {
+/* h2 {
     color: black;
     font-family:cursive ;
     background-color: rgb(128, 93, 128);
     border-radius: 10px;
     margin-left: 200px;
     margin-right: 200px;
-}
+} */
 
 /* .flex-container {
     display:inline-flex;
