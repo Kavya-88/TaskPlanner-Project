@@ -1,9 +1,9 @@
 # TaskPlanner-Project
 Created By Uma, Kavya
 ## About Project
-- Task planner project created from Start to end, This project main aim is to add task,display task, task status to Done and delete task.
+- Task planner project created from Start to end, This project main aim is to add task, display task, task status to Done and delete task.
 ### WireFrame
-![Wireframe Image](./img/wireframe.jpg)
+![Wireframe Image](./img/wireframe1.jpg)
 
 ## Features 
 - Click on Create Task  from Home page.
@@ -15,7 +15,7 @@ Created By Uma, Kavya
 ##  Software/Programming languages
 - HTML
 - CSS
-- BootStrap 5.1.3
+- BootStrap v5.1.3
 - GitHub,Gitbash
 - VS code
 - Java Script
@@ -24,7 +24,7 @@ Created By Uma, Kavya
 
 ## Final Page Look
 ![Final web page look Add task form ](./img/addtaskform.jpg)
-![Final web page look](./img/finalpage.jpg)
+![Final web page look](./img/final.jpg)
 
 ## GitHub Page
 [GitHub Page](https://kavya-88.github.io/TaskPlanner-Project/)
