@@ -3,7 +3,7 @@ Created By Uma, Kavya
 ## About Project
 - Task planner project created from Start to end, This project main aim is to add task,display task, task status to Done and delete task.
 ### WireFrame
-![Wireframe Image](./img/wireframe.jpg)
+![Wireframe Image](./img/wireframe.JPG)
 
 ## Features 
 
