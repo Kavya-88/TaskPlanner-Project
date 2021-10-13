@@ -30,7 +30,7 @@ Created By Uma, Kavya
 
 ## Final Page Look
 ![Final web page look Add task form ](./img/addtaskk.jpg)
-![Final web page look](./img/finalpage.jpg)
+![Final web page look](./img/Finalpage.jpg)
 
 ## GitHub Page
 [GitHub Page](https://kavya-88.github.io/TaskPlanner-Project/)
