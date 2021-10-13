@@ -6,11 +6,11 @@ function createTaskHtml (id, myName, description, assignedto, dueDate, status){
   const html =`<div class="card col-auto" data-task-id="${id}" style="width: 15rem;">
   <div class="card-body p-2 bd-highlight">
   <h5 class="card-title justify text-center">Task Card</h5>
-  <p class="card-text">Task Name: ${myName}</p>
-  <p class="description text-start">Description: ${description}</p>
-  <p class="card-text">Assigned to: ${assignedto}</p>
-  <p class="card-text">Due Date: ${dueDate}</p>
-  <p class="card-text status">Status: ${status}</p>
+  <p class="card-text"><strong>Task Name:</strong> ${myName}</p>
+  <p class="description text-start"><strong>Description:</strong> ${description}</p>
+  <p class="card-text"><strong>Assigned to:</strong> ${assignedto}</p>
+  <p class="card-text"><strong>Due Date:</strong> ${dueDate}</p>
+  <p class="card-text status"><strong>Status:</strong> ${status}</p>
   
 <button class="btn done-button ${status === "Done" ? "invisible" : "visible"}">Done</button>
     <button type="button" class="btn delete-button">Delete</button>
